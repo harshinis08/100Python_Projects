@@ -1,33 +1,5 @@
-
+from rockPaperScissorImages import rock, paper, scissors
 import random
-
-rock = ''' rock
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
-
-paper = ''' paper
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
-
-scissors = ''' scissors
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-
 
 logo = [rock, paper, scissors]
 
