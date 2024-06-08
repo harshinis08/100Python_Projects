@@ -1,0 +1,25 @@
+{% macro render_dict(dictionary) %}
+     <table class="table">
+            <tr>
+                <th>Coffee</th>
+                <th>Price</th>
+                <th>Comments</th>
+            </tr>
+
+            {% for coffee, price in dictionary.items() %}
+                <tr>
+                    <td>{{coffee|title}}</td>
+                    <td>{{price|round(1)}}</td>
+
+                    {% if price<3 %}
+                        <td>Normal</td>
+                    {% elif price>3 and price<6 %}
+                        <td>Expensive</td>
+                    {% else %}
+                        <td>Pricey</td>
+                    {% endif %}
+                </tr>
+
+            {% endfor %}
+     </table>
+{% endmacro %}
