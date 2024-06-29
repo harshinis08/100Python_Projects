@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% if fruits %}
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fruit Name:</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+             {% for item in fruits %}
+                <tr>
+                    <td>{{item}}</td>
+                    <td>{{1.50}}</td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    {% else %}
+        <p>No items in table</p>
+    {% endif %}
+
+{% endblock %}
